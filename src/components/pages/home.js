@@ -7,6 +7,9 @@ const SectLogo = styled.section`
   font-style: italic;
   font-weight: 600;
   background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
+  /* border-radius: 30px;
+  width: 60%;
+  margin: 0 auto; */
 
   h1 {
     font-size: 6rem;

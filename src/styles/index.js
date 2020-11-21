@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 const Global = createGlobalStyle`
+  html,
   body {
     display: flex;
     flex-direction: column;
@@ -21,7 +22,8 @@ const Headers = styled.header`
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  /* background: linear-gradient(white,gold, lime); */
+  /* background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403); */
+
 `
 
 // const Span = styled.span`
