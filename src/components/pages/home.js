@@ -6,21 +6,7 @@ const SectLogo = styled.section`
   text-align: center;
   font-style: italic;
   font-weight: 600;
-  /* background: lime; */
   background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
-  /* animation: logo 7s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275); */
-
-  /* @keyframes logo {
-    0% {
-      background: linear-gradient(white, gold);
-    }
-    50% {
-      background: linear-gradient(white, lime, gold, white);
-    }
-    100% {
-      background: linear-gradient(lime, white);
-    }
-  } */
 
   h1 {
     font-size: 6rem;
@@ -42,9 +28,6 @@ const ContentTags = styled.section`
   align-items: center;
   color: white;
   padding: 0.8rem;
-  /* width: 100px; */
-  /* height: 50px; */
-  /* background: aqua; */
 
   .tags {
     display: flex;
@@ -52,8 +35,6 @@ const ContentTags = styled.section`
     align-items: center;
     color: #000000;
     background: #ffc700;
-    /* background: linear-gradient(gold, lime); */
-    /* background: repeating-linear-gradient(lime, gold); */
     padding: 0.23rem 0.3rem 0.23rem 0.3rem;
     margin: 4px;
     border-radius: 5px;
@@ -123,11 +104,6 @@ function Home() {
         </div>
       </ContentTags>
       <ContentCards>
-        {/* {fruits.map(fruit => {
-          <Cards>
-            {fruit.name}
-          </Cards>
-        })} */}
         <Cards></Cards>
         <Cards></Cards>
         <Cards></Cards>
