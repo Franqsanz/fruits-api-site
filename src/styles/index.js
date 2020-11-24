@@ -17,44 +17,12 @@ const Global = createGlobalStyle`
   }
 `
 
-const Headers = styled.header`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  /* background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403); */
-
-`
-
 // const Span = styled.span`
 //   font-size: 2rem;
 //   font-style: italic;
 //   font-weight: 600;
 //   transform: skewY(-2deg);
 // `
-
-const Ul = styled.ul`
-  display: flex;
-  padding-inline-start: 0;
-`
-
-const NavLink = styled.li`
-  font-size: 1.3rem;
-  color: black;
-  list-style: none;
-
-  a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: #2a2a2a;
-    /* color: #e1e1e1; */
-    font-weight: 600;
-  }
-
-  a:hover {
-    border-bottom: 2px solid;
-  }
-`
 
 const Footers = styled.footer`
   margin-top: auto;
@@ -64,8 +32,5 @@ const Footers = styled.footer`
 
 export {
   Global,
-  Headers,
-  Ul,
-  NavLink,
   Footers
 };

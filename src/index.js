@@ -19,7 +19,7 @@ ReactDom.render(
       <Header />
       <Route exact path="/" component={Home} />
       <Route exact path="/docs" component={Docs} />
-      <Route exact path="/about" component={About} />
+      <Route exact path="/acerca-de" component={About} />
     </Router>
     <Footer />
   </React.StrictMode>,

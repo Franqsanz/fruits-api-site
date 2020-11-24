@@ -1,6 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Headers, NavLink, Ul } from '../styles/index';
+import styled from 'styled-components';
+
+const Headers = styled.header`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  /* background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403); */
+
+  @media only screen and (max-width: 425px) {
+    & {
+      padding: 1rem;
+    }
+  }
+`
+
+const Ul = styled.ul`
+  display: flex;
+  padding-inline-start: 0;
+`
+
+const NavLink = styled.li`
+  font-size: 1.3rem;
+  color: black;
+  list-style: none;
+
+  a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #2a2a2a;
+    /* color: #e1e1e1; */
+    font-weight: 600;
+  }
+
+  a:hover {
+    border-bottom: 2px solid;
+  }
+
+   @media only screen and (max-width: 425px) {
+    & {
+      font-size: 1rem;
+    }
+  }
+`
 
 function Header() {
   return (
@@ -8,9 +51,9 @@ function Header() {
       <nav>
         <Ul>
           <NavLink>
-            <Link to="/">HOME</Link>
+            <Link to="/">INICIO</Link>
             <Link to="/docs">DOCS</Link>
-            <Link to="/about">ABOUT</Link>
+            <Link to="/acerca-de">ACERCA DE</Link>
           </NavLink>
         </Ul>
       </nav>

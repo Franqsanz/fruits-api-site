@@ -11,17 +11,24 @@ const SectLogo = styled.section`
   width: 60%;
   margin: 0 auto; */
 
-  h1 {
-    font-size: 6rem;
-    color: #191919;
-    transform: skewY(-2deg);
+   @media only screen and (max-width: 425px) {
+    & {
+      padding: 4rem;
+    }
   }
 `
 
 const H1 = styled.h1`
-  font-size: 2.4rem;
+  font-size: 6rem;
+  color: #191919;
+  transform: skewY(-2deg);
   text-align: center;
-  /* padding: 1rem; */
+
+  @media only screen and (max-width: 425px) {
+  & {
+    font-size: 4rem;
+  }
+}
 `
 
 const ContentTags = styled.section`
@@ -72,6 +79,10 @@ const Cards = styled.div`
   }
 `
 
+function msj() {
+  return alert('Precionaste esta carta!');
+}
+
 function Home() {
   const number = 10;
 
@@ -107,12 +118,12 @@ function Home() {
         </div>
       </ContentTags>
       <ContentCards>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
+        <Cards onClick={msj}></Cards>
+        <Cards onClick={msj}></Cards>
+        <Cards onClick={msj}></Cards>
+        <Cards onClick={msj}></Cards>
+        <Cards onClick={msj}></Cards>
+        <Cards onClick={msj}></Cards>
       </ContentCards>
     </>
   )
