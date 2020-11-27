@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const SectLogo = styled.section`
   padding: 10rem;
@@ -11,12 +11,12 @@ const SectLogo = styled.section`
   width: 60%;
   margin: 0 auto; */
 
-   @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 425px) {
     & {
       padding: 4rem;
     }
   }
-`
+`;
 
 const H1 = styled.h1`
   font-size: 6rem;
@@ -25,11 +25,11 @@ const H1 = styled.h1`
   text-align: center;
 
   @media only screen and (max-width: 425px) {
-  & {
-    font-size: 4rem;
+    & {
+      font-size: 4rem;
+    }
   }
-}
-`
+`;
 
 const ContentTags = styled.section`
   display: flex;
@@ -43,7 +43,7 @@ const ContentTags = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000000;
+    color: var(--black);
     background: #ffc700;
     padding: 0.23rem 0.3rem 0.23rem 0.3rem;
     margin: 4px;
@@ -54,16 +54,16 @@ const ContentTags = styled.section`
       margin: 0 0 0 5px;
       padding: 0.1rem 0.3rem 0.1rem 0.3rem;
       border-radius: 5px;
-      color: #ffffff;
+      color: var(--white);
     }
   }
-`
+`;
 
 const ContentCards = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-`
+`;
 
 const Cards = styled.div`
   width: 400px;
@@ -71,16 +71,16 @@ const Cards = styled.div`
   box-shadow: 0 0 5px #c7c7c7;
   border-radius: 10px;
   margin: 10px;
-  background: #ffffff;
+  background: var(--white);
 
   & {
     text-align: center;
     font-size: 1.2rem;
   }
-`
+`;
 
 function msj() {
-  return alert('Precionaste esta carta!');
+  return alert("Precionaste esta carta!");
 }
 
 function Home() {
@@ -126,7 +126,7 @@ function Home() {
         <Cards onClick={msj}></Cards>
       </ContentCards>
     </>
-  )
+  );
 }
 
 export default Home;

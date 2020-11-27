@@ -1,10 +1,8 @@
-import React from 'react';
-import { Footers } from '../styles/index';
+import React from "react";
+import { Footers } from "../styles/index";
 
 function Footer() {
-  return (
-    <Footers />
-  )
+  return <Footers />;
 }
 
 export default Footer;

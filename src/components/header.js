@@ -1,25 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const Headers = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  /* background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403); */
+  /* background: linear-gradient(-50deg, #fa2a1b, #ffc700, 85%, #03d403); */
 
   @media only screen and (max-width: 425px) {
     & {
       padding: 1rem;
     }
   }
-`
+`;
 
 const Ul = styled.ul`
   display: flex;
   padding-inline-start: 0;
-`
+`;
 
 const NavLink = styled.li`
   font-size: 1.3rem;
@@ -38,12 +38,16 @@ const NavLink = styled.li`
     border-bottom: 2px solid;
   }
 
-   @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 425px) {
     & {
       font-size: 1rem;
     }
+
+    a {
+      margin: 0 10px;
+    }
   }
-`
+`;
 
 function Header() {
   return (
@@ -58,7 +62,7 @@ function Header() {
         </Ul>
       </nav>
     </Headers>
-  )
+  );
 }
 
 export default Header;

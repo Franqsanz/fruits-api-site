@@ -1,42 +1,42 @@
-const path = require('path');
+const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',  // Elegimos nuestro punto de entrada
+  entry: "./src/index.js", // Elegimos nuestro punto de entrada
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
-  },  // Añadimos nuestro punto de salida
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
+  }, // Añadimos nuestro punto de salida
   resolve: {
-    extensions: ['.js', '.jsx']  // Añadimos el soporte para la extencion de JSX
+    extensions: [".js", ".jsx"], // Añadimos el soporte para la extencion de JSX
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,  // Ignora la carpeta de node_modules
+        exclude: /node_modules/, // Ignora la carpeta de node_modules
         use: {
-          loader: "babel-loader" // Utiliza la configuracion de Babel
-        }
+          loader: "babel-loader", // Utiliza la configuracion de Babel
+        },
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader"
-          }
-        ]
+            loader: "html-loader",
+          },
+        ],
       },
       // {
       //   test: /\.css$/i,
       //   use: ['style-loader', 'css-loader'],
       // }
-    ]
+    ],
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
-      filename: "./index.html"
-    })
-  ]
+      filename: "./index.html",
+    }),
+  ],
 };
