@@ -118,12 +118,12 @@ function Home() {
         </div>
       </ContentTags>
       <ContentCards>
-        <Cards onClick={msj}></Cards>
-        <Cards onClick={msj}></Cards>
-        <Cards onClick={msj}></Cards>
-        <Cards onClick={msj}></Cards>
-        <Cards onClick={msj}></Cards>
-        <Cards onClick={msj}></Cards>
+        <Cards onClick={msj} />
+        <Cards onClick={msj} />
+        <Cards onClick={msj} />
+        <Cards onClick={msj} />
+        <Cards onClick={msj} />
+        <Cards onClick={msj} />
       </ContentCards>
     </>
   );
