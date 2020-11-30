@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { Test } from "../index";
 
 const Section = styled.section`
-  width: 400px;
+  /* width: 400px; */
   height: auto;
   margin: 50px auto;
   box-shadow: 0 15px 50px #c7c7c7;
@@ -12,9 +13,10 @@ const Section = styled.section`
 `;
 
 const H2 = styled.h2`
-  width: 85%;
-  margin: auto;
+  /* width: 85%; */
+  /* margin: auto; */
   text-align: left;
+  color: red;
 `;
 
 const P = styled.p`
@@ -27,16 +29,16 @@ const P = styled.p`
 
 function Docs() {
   return (
-    <Section>
-      {/* <H1>DOCUMENTATION</H1> */}
-      <H2>Frutas y mas frutas</H2>
-      <P>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-        sapiente veritatis ipsam quibusdam nostrum dolorem labore repellendus
-        sed officia iste neque ducimus commodi ex aut incidunt id sint quidem
-        architecto.
-      </P>
-    </Section>
+    <Test />
+    // <Section>
+    //   <H2>Frutas y mas frutas</H2>
+    //   <P>
+    //     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+    //     sapiente veritatis ipsam quibusdam nostrum dolorem labore repellendus
+    //     sed officia iste neque ducimus commodi ex aut incidunt id sint quidem
+    //     architecto.
+    //   </P>
+    // </Section>
   );
 }
 

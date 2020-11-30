@@ -8,7 +8,7 @@ module.exports = {
     filename: "bundle.js",
   }, // Añadimos nuestro punto de salida
   resolve: {
-    extensions: [".js", ".jsx"], // Añadimos el soporte para la extencion de JSX
+    extensions: [".js", ".jsx", ".mdx"], // Añadimos el soporte para la extencion de JSX
   },
   module: {
     rules: [
@@ -16,7 +16,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/, // Ignora la carpeta de node_modules
         use: {
-          loader: "babel-loader", // Utiliza la configuracion de Babel
+          loader: "babel-loader" // Utiliza la configuracion de Babel
         },
       },
       {
@@ -25,6 +25,19 @@ module.exports = {
           {
             loader: "html-loader",
           },
+        ],
+      },
+      {
+        test: /\.mdx?$/,
+        use: [
+          "babel-loader",
+          {
+            loader: "@mdx-js/loader",
+            options: {
+              // eslint-disable-next-line global-require
+              mdPlugins: [require("remark-highlight.js")]
+            }
+          }
         ],
       },
       // {

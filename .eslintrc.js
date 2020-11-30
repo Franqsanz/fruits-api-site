@@ -13,5 +13,21 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "prettier"],
-  rules: {},
+  rules: {
+    "no-alert": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/react-in-jsx-scope": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/no-cycle": 0,
+    "no-unused-vars": 1
+  },
 };
