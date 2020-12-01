@@ -6,7 +6,7 @@ const SectLogo = styled.section`
   text-align: center;
   font-style: italic;
   font-weight: 600;
-  background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
+  /* background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403); */
   /* border-radius: 30px;
   width: 60%;
   margin: 0 auto; */
@@ -38,6 +38,7 @@ const ContentTags = styled.section`
   align-items: center;
   color: white;
   padding: 0.8rem;
+  background: var(--background-body);
 
   .tags {
     display: flex;
@@ -63,6 +64,7 @@ const ContentCards = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: var(--background-body);
 `;
 
 const Cards = styled.div`
