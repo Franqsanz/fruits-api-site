@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-const Global = createGlobalStyle`
+export const Global = createGlobalStyle`
   :root {
     --background-body: #f5f5f5;
     --white: #ffffff;
@@ -23,11 +23,3 @@ const Global = createGlobalStyle`
     margin: 0;
   }
 `;
-
-const Footers = styled.footer`
-  margin-top: auto;
-  padding: 2rem;
-  background: #191919;
-`;
-
-export { Global, Footers };

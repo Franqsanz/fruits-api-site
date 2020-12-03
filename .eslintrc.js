@@ -28,6 +28,7 @@ module.exports = {
     "import/no-unresolved": 0,
     "import/extensions": 0,
     "import/no-cycle": 0,
-    "no-unused-vars": 1
+    "no-unused-vars": 1,
+    "import/prefer-default-export": 0
   },
 };

@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Test } from "../index";
+// import { Test } from "../index";
+
+const Body = styled.body`
+  background: white;
+`
 
 const Section = styled.section`
   /* width: 400px; */
@@ -20,16 +24,19 @@ const H2 = styled.h2`
 `;
 
 const P = styled.p`
-  width: 85%;
+  /* width: 85%; */
   line-height: 1.77;
   margin: auto;
   /* text-align: left; */
   padding: 0.7rem;
+  background: lime;
 `;
 
 function Docs() {
   return (
-    <Test />
+    <Body>
+      {/* <Test /> */}
+    </Body>
     // <Section>
     //   <H2>Frutas y mas frutas</H2>
     //   <P>

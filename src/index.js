@@ -12,8 +12,8 @@ render(
     <Router>
       <Header />
       <Route exact path="/" component={Home} />
-      <Route exact path="/docs" component={Docs} />
-      <Route exact path="/acerca-de" component={About} />
+      <Route path="/docs" component={Docs} />
+      <Route path="/acerca-de" component={About} />
     </Router>
     <Footer />
   </React.StrictMode>,
