@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const InfoFooter = styled.footer`
-  padding: 2.5rem;
+  padding: 2rem;
   text-align: center;
 `;
 

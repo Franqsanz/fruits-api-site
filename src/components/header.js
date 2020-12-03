@@ -21,7 +21,7 @@ const Ul = styled.ul`
   padding-inline-start: 0;
 `;
 
-const NavLink = styled.li`
+const LiLink = styled.li`
   font-size: 1.3rem;
   color: black;
   list-style: none;
@@ -54,11 +54,11 @@ function Header() {
     <Headers>
       <nav>
         <Ul>
-          <NavLink>
+          <LiLink>
             <Link to="/">INICIO</Link>
             <Link to="/docs">DOCS</Link>
             <Link to="/acerca-de">ACERCA DE</Link>
-          </NavLink>
+          </LiLink>
         </Ul>
       </nav>
     </Headers>
