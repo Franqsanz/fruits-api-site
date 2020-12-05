@@ -31,6 +31,13 @@ const H1 = styled.h1`
   }
 `;
 
+const H2 = styled.h2`
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.8rem;
+  background: var(--background-body);
+`
+
 const ContentTags = styled.section`
   display: flex;
   /* justify-content: center; */
@@ -100,7 +107,7 @@ function Home() {
         </P>
         <P>Si deseas saber más visita la pagina Acerca de.</P>
       </Section> */}
-      {/* <H1>FRUTAS</H1> */}
+      <H2>TAGS</H2>
       <ContentTags>
         <div className="tags">
           ASIA
