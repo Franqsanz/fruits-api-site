@@ -6,10 +6,6 @@ const SectLogo = styled.section`
   text-align: center;
   font-style: italic;
   font-weight: 600;
-  /* background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403); */
-  /* border-radius: 30px;
-  width: 60%;
-  margin: 0 auto; */
 
   @media only screen and (max-width: 425px) {
     & {
@@ -89,7 +85,7 @@ const Cards = styled.div`
 `;
 
 function msj() {
-  return alert("Precionaste esta carta!");
+  return alert("¡HOLA! 👋🏻");
 }
 
 function Home() {
@@ -122,7 +118,7 @@ function Home() {
           <div className="number">{number}</div>
         </div>
         <div className="tags">
-          ASIA CENTRAL
+          EUROPA CENTRAL
           <div className="number">{number}</div>
         </div>
       </ContentTags>

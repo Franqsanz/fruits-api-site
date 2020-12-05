@@ -6,7 +6,8 @@ import { Global } from "./styles/index";
 
 function App() {
   return (
-    <React.StrictMode>
+    <>
+      {/* <React.StrictMode> */}
       <Global />
       <Router>
         <Header />
@@ -15,7 +16,8 @@ function App() {
         <Route exact path="/acerca-de" component={About} />
       </Router>
       <Footer />
-    </React.StrictMode>
+      {/* </React.StrictMode> */}
+    </>
   )
 }
 

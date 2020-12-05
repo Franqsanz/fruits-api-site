@@ -7,7 +7,6 @@ const Headers = styled.header`
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  /* background: linear-gradient(-50deg, #fa2a1b, #ffc700, 85%, #03d403); */
 
   @media only screen and (max-width: 425px) {
     & {
