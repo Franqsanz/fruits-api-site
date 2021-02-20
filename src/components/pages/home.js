@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Query from "../query";
 
 const SectLogo = styled.section`
   padding: 10rem;
@@ -63,30 +64,27 @@ const ContentTags = styled.section`
   }
 `;
 
-const ContentCards = styled.section`
+export const ContentCards = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: var(--background-body);
 `;
 
-const Cards = styled.div`
+export const Cards = styled.div`
   width: 400px;
-  height: 400px;
+  /* height: 400px; */
   box-shadow: 0 0 5px #c7c7c7;
   border-radius: 10px;
   margin: 10px;
   background: var(--white);
+  padding: 1em;
 
   & {
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.2rem;
   }
 `;
-
-function msj() {
-  return alert("¡HOLA! 👋🏻");
-}
 
 function Home() {
   const number = 10;
@@ -104,7 +102,7 @@ function Home() {
         <P>Si deseas saber más visita la pagina Acerca de.</P>
       </Section> */}
       <H2>TAGS</H2>
-      <ContentTags>
+      {/* <ContentTags>
         <div className="tags">
           ASIA
           <div className="number">{number}</div>
@@ -121,14 +119,9 @@ function Home() {
           EUROPA CENTRAL
           <div className="number">{number}</div>
         </div>
-      </ContentTags>
+      </ContentTags> */}
       <ContentCards>
-        <Cards onClick={msj} />
-        <Cards onClick={msj} />
-        <Cards onClick={msj} />
-        <Cards onClick={msj} />
-        <Cards onClick={msj} />
-        <Cards onClick={msj} />
+        <Query />
       </ContentCards>
     </>
   );

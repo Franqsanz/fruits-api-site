@@ -1,41 +1,54 @@
-import { ApolloClient, gql, HttpLink, InMemoryCache } from "apollo-boost";
-import { ApolloProvider, Query } from "react-apollo";
-
-const link = new HttpLink({
-  uri: "http://localhost:9000/graphql",
-});
-
-const client = new ApolloClient({
-  link,
-  cache: new InMemoryCache(),
-});
-
-function Test() {
-  return (
-    <ApolloProvider client={client}>
-      <Query query={ALL_FRUITS}>
-        {function ({ loading, error, data }) {
-          if (loading) return <p>Loading...</p>;
-          if (error) return <p>error</p>;
-          // return console.log(data);
-          return data.fruits.map((fruit) => console.log(fruit));
-        }}
-      </Query>
-    </ApolloProvider>
-  );
-}
+import { gql, useQuery } from '@apollo/client';
+import React, { useEffect, useState } from 'react';
+import { Cards, ContentCards } from './pages/home';
 
 const ALL_FRUITS = gql`
   query allFruits {
-    Fruits {
+    fruits {
       id
       scientific_name
+      tree_name
       fruit_name
+      family
       origin
+      bloom
+      maturation_fruit
+      life_cycle
       description
       climatic_zone
+      producing_countries {
+        country
+      }
     }
   }
 `;
 
-export default Test;
+function fruits() {
+  const { error, loading, data } = useQuery(ALL_FRUITS);
+  const [fruits, setFruits] = useState([]);
+
+  useEffect(() => {
+    if (data) setFruits(data.fruits)
+  }, [data])
+
+  return (
+    <ContentCards>
+      {
+        fruits.map((fruit) => {
+          return (
+            <Cards>
+              <h1>{fruit.scientific_name}</h1>
+              <h1>{fruit.tree_name}</h1>
+              <h1>{fruit.fruit_name}</h1>
+              <h2>{fruit.origin}</h2>
+              <h2>{fruit.family}</h2>
+              <p>{fruit.description}</p>
+            </Cards>
+          )
+        })
+      }
+    </ContentCards>
+  )
+}
+
+export default fruits;

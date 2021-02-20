@@ -32,11 +32,7 @@ module.exports = {
         use: [
           "babel-loader",
           {
-            loader: "@mdx-js/loader",
-            options: {
-              // eslint-disable-next-line global-require
-              mdPlugins: [require("remark-highlight.js")]
-            }
+            loader: "@mdx-js/loader"
           }
         ],
       },

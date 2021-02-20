@@ -29,6 +29,9 @@ module.exports = {
     "import/extensions": 0,
     "import/no-cycle": 0,
     "no-unused-vars": 1,
-    "import/prefer-default-export": 0
+    "import/prefer-default-export": 0,
+    "no-console": 0,
+    "no-shadow": 0,
+    "react/jsx-key": 0
   },
 };
