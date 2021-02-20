@@ -6,7 +6,7 @@ import { About, Docs, Footer, Header, Home } from "./components/index";
 import { Global } from "./styles/index";
 
 const link = from([
-  new HttpLink({ uri: 'https://fruits-api.netlify.app/graphql'})
+  new HttpLink({ uri: 'http://localhost:9000/graphql'})
 ]);
 
 
