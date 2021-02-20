@@ -9,12 +9,10 @@ const link = from([
   new HttpLink({ uri: 'https://fruits-api.netlify.app/graphql'})
 ]);
 
-
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link
 });
-
 
 function App() {
   return (

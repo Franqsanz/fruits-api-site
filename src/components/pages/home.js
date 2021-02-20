@@ -72,13 +72,14 @@ export const ContentCards = styled.section`
 `;
 
 export const Cards = styled.div`
-  width: 400px;
+  /* width: 400px; */
+  max-width: 100%;
   /* height: 400px; */
   box-shadow: 0 0 5px #c7c7c7;
   border-radius: 10px;
   margin: 10px;
   background: var(--white);
-  padding: 1em;
+  padding: 1.5em;
 
   & {
     /* text-align: center; */
@@ -101,7 +102,7 @@ function Home() {
         </P>
         <P>Si deseas saber más visita la pagina Acerca de.</P>
       </Section> */}
-      <H2>TAGS</H2>
+      {/* <H2>TAGS</H2> */}
       {/* <ContentTags>
         <div className="tags">
           ASIA
