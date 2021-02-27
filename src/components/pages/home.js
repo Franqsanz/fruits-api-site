@@ -68,22 +68,48 @@ export const ContentCards = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 1.5em;
   background: var(--background-body);
 `;
 
 export const Cards = styled.div`
-  width: 400px;
-  /* height: 400px; */
+  width: 600px;
   box-shadow: 0 0 5px #c7c7c7;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
   background: var(--white);
   padding: 1em;
 
   & {
-    /* text-align: center; */
     font-size: 1.2rem;
   }
+
+  div {
+    padding: 0 0 1em 0 ;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 0 0.5em 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+`;
+
+export const Load = styled.div`
+  padding: 2em;
+  font-size: 2rem;
+  text-align: center;
+  background: white;
+  font-weight: 700;
 `;
 
 function Home() {
@@ -101,7 +127,7 @@ function Home() {
         </P>
         <P>Si deseas saber más visita la pagina Acerca de.</P>
       </Section> */}
-      <H2>TAGS</H2>
+      {/* <H2>TAGS</H2> */}
       {/* <ContentTags>
         <div className="tags">
           ASIA
@@ -120,9 +146,7 @@ function Home() {
           <div className="number">{number}</div>
         </div>
       </ContentTags> */}
-      <ContentCards>
-        <Query />
-      </ContentCards>
+      <Query />
     </>
   );
 }
