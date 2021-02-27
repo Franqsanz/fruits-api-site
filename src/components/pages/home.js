@@ -74,11 +74,22 @@ export const ContentCards = styled.section`
 
 export const Cards = styled.div`
   width: 600px;
+  font-size: 1.1rem;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #c7c7c7;
+  padding: 1em;
+
+
+
+
+
+  /* width: 600px;
   box-shadow: 0 0 5px #c7c7c7;
   border-radius: 10px;
   margin: 5px;
   background: var(--white);
-  padding: 1em;
+  padding: 1em; */
 
   & {
     font-size: 1.2rem;
@@ -92,6 +103,7 @@ export const Cards = styled.div`
     font-size: 3rem;
     text-align: center;
     padding: 0 0 0.5em 0;
+    font-style: italic;
   }
 
   li {
