@@ -3,16 +3,19 @@ import styled from "styled-components";
 import Query from "../query";
 
 const SectLogo = styled.section`
-  padding: 10rem;
-  text-align: center;
+  background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-style: italic;
   font-weight: 600;
 
-  @media only screen and (max-width: 425px) {
+  /* @media only screen and (max-width: 425px) {
     & {
       padding: 4rem;
     }
-  }
+  } */
 `;
 
 const H1 = styled.h1`
@@ -69,7 +72,7 @@ export const ContentCards = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   padding: 1.5em;
-  background: var(--background-body);
+  /* background: var(--background-body); */
 `;
 
 export const Cards = styled.div`

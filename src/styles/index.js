@@ -16,7 +16,7 @@ export const Global = createGlobalStyle`
     color: #2a2a2a;
     /* color: #f3f3f3; */
     /* background: var(--background-body); */
-    background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
+    /* background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403); */
   }
 
   *, *::after, *::before {

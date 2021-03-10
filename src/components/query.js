@@ -62,12 +62,8 @@ function fruits() {
                   {' '}
                   {fruit.family}
                 </li>
-                {/* <h2>{fruit.scientific_name}</h2> */}
-                {/* <h3>{fruit.tree_name}</h3> */}
-                {/* <h4>{fruit.origin}</h4> */}
-                {/* <h5>{fruit.family}</h5> */}
               </div>
-              Descripcion:
+              <h2>Descripcion:</h2>
               <p>{fruit.description}</p>
             </Cards>
           )
