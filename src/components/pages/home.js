@@ -31,12 +31,16 @@ const H1 = styled.h1`
   }
 `;
 
-const H2 = styled.h2`
-  text-align: center;
-  font-size: 2.5rem;
+export const H1Card = styled.h1`
   padding: 0.8rem;
+  /* font-size: 5rem; */
   background: var(--background-body);
-`
+`;
+
+export const H2 = styled.h2`
+  text-align: center;
+  /* background: var(--background-body); */
+`;
 
 const ContentTags = styled.section`
   display: flex;
@@ -125,6 +129,13 @@ export const Load = styled.div`
   text-align: center;
   background: white;
   font-weight: 700;
+`;
+
+export const Li = styled.li`
+  padding: 1rem;
+  /* font-size: 1.125rem; */
+  text-align: center;
+  /* background: red; */
 `;
 
 function Home() {
