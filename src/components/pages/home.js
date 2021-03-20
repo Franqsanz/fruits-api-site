@@ -31,16 +31,10 @@ const H1 = styled.h1`
   }
 `;
 
-export const H1Card = styled.h1`
-  padding: 0.8rem;
-  /* font-size: 5rem; */
-  background: var(--background-body);
-`;
-
-export const H2 = styled.h2`
-  text-align: center;
-  /* background: var(--background-body); */
-`;
+// export const H2 = styled.h2`
+//   text-align: center;
+//   /* background: var(--background-body); */
+// `;
 
 const ContentTags = styled.section`
   display: flex;
@@ -77,40 +71,44 @@ export const ContentCards = styled.section`
   justify-content: center;
   padding: 1.5em;
   /* background: var(--background-body); */
+
+  @media only screen and (max-width: 425px) {
+    & {
+      padding: 1.5em 0 0 0;
+    }
+  }
 `;
 
 export const Cards = styled.div`
   width: 600px;
   font-size: 1.1rem;
-  margin: 5px;
+  margin: 7px;
   border-radius: 5px;
-  box-shadow: 0 0 5px #c7c7c7;
-  padding: 1em;
-
-
-
-
-
-  /* width: 600px;
-  box-shadow: 0 0 5px #c7c7c7;
-  border-radius: 10px;
-  margin: 5px;
-  background: var(--white);
-  padding: 1em; */
+  box-shadow: 0 0 5px #000000;
+  overflow: hidden;
+  background: whitesmoke;
 
   & {
     font-size: 1.2rem;
   }
 
-  div {
-    padding: 0 0 1em 0 ;
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    font-style: italic;
+    color: #191919;
+    /* background: gold; */
+    background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
   }
 
-  h1 {
-    font-size: 3rem;
+  h2 {
+    font-size: 1.5rem;
     text-align: center;
-    padding: 0 0 0.5em 0;
-    font-style: italic;
+    padding: 0.5em;
+    /* font-style: italic; */
+    /* background: #03d403; */
+    color: #191919;
   }
 
   li {
@@ -120,6 +118,13 @@ export const Cards = styled.div`
   p {
     font-size: 1rem;
     line-height: 1.65;
+    padding: 1.5rem;
+  }
+
+  @media only screen and (max-width: 425px) {
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 `;
 
@@ -135,7 +140,6 @@ export const Li = styled.li`
   padding: 1rem;
   /* font-size: 1.125rem; */
   text-align: center;
-  /* background: red; */
 `;
 
 function Home() {

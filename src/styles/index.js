@@ -13,10 +13,8 @@ export const Global = createGlobalStyle`
     flex-direction: column;
     min-height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #2a2a2a;
     color: #2a2a2a;
-    /* color: #f3f3f3; */
-    /* background: var(--background-body); */
-    /* background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403); */
   }
 
   *, *::after, *::before {

@@ -1,6 +1,6 @@
 import { gql, useQuery } from '@apollo/client';
 import React, { useEffect, useState } from 'react';
-import { Cards, ContentCards, H1Card, H2, Li, Load } from './pages/home';
+import { Cards, ContentCards, Li, Load } from './pages/home';
 
 const ALL_FRUITS = gql`
   query allFruits {
@@ -41,28 +41,28 @@ function fruits() {
           return (
             <Cards key={fruit.scientific_name}>
               <div>
-                <H1Card>{fruit.fruit_name}</H1Card>
-                <H2>Nombre Cientifico</H2>
+                <h1>{fruit.fruit_name}</h1>
+                <h2>Nombre Cientifico</h2>
                 {' '}
                 <Li>
                   {fruit.scientific_name}
                 </Li>
-                <H2>Nombre del Arbol</H2>
+                <h2>Nombre del Arbol</h2>
                 {' '}
                 <Li>
                   {fruit.tree_name}
                 </Li>
-                <H2>Origen</H2>
+                <h2>Origen</h2>
                 {' '}
                 <Li>
                   {fruit.origin}
                 </Li>
-                <H2>Familia</H2>
+                <h2>Familia</h2>
                 {' '}
                 <Li>
                   {fruit.family}
                 </Li>
-                <H2>Paises de Producción</H2>
+                <h2>Paises de Producción</h2>
                 {' '}
                 <Li>
                   {fruit.producing_countries.map(p => {
@@ -74,7 +74,7 @@ function fruits() {
                   })}
                 </Li>
               </div>
-              <h3>Descripcion:</h3>
+              <h2>Descripcion:</h2>
               <p>{fruit.description}</p>
             </Cards>
           )

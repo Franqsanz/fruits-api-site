@@ -8,7 +8,7 @@ module.exports = {
     filename: "bundle.js",
   }, // Añadimos nuestro punto de salida
   resolve: {
-    extensions: [".js", ".jsx", ".mdx"], // Añadimos el soporte para la extencion de JSX
+    extensions: [".js", ".jsx"], // Añadimos el soporte para la extencion de JSX
   },
   module: {
     rules: [
@@ -26,20 +26,7 @@ module.exports = {
             loader: "html-loader",
           },
         ],
-      },
-      {
-        test: /\.mdx?$/,
-        use: [
-          "babel-loader",
-          {
-            loader: "@mdx-js/loader"
-          }
-        ],
-      },
-      // {
-      //   test: /\.css$/i,
-      //   use: ['style-loader', 'css-loader'],
-      // }
+      }
     ],
   },
   plugins: [

@@ -2,7 +2,7 @@ import { ApolloClient, ApolloProvider, from, HttpLink, InMemoryCache } from "@ap
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { About, Docs, Footer, Header, Home } from "./components/index";
+import { About, Footer, Header, Home } from "./components/index";
 import { Global } from "./styles/index";
 
 const link = from([
@@ -22,7 +22,6 @@ function App() {
         <Header />
         <ApolloProvider client={client}>
           <Route exact path="/" component={Home} />
-          <Route exact path="/docs" component={Docs} />
           <Route exact path="/acerca-de" component={About} />
         </ApolloProvider>
       </Router>

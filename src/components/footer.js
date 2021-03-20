@@ -4,6 +4,7 @@ import styled from "styled-components";
 const InfoFooter = styled.footer`
   padding: 1.1rem;
   text-align: center;
+  background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
 `;
 
 const Info = styled.p`

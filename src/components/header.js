@@ -6,7 +6,7 @@ const Headers = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 
   @media only screen and (max-width: 425px) {
     & {
@@ -28,8 +28,8 @@ const LiLink = styled.li`
   a {
     margin: 0 20px;
     text-decoration: none;
-    color: #2a2a2a;
-    /* color: #e1e1e1; */
+    /* color: #2a2a2a; */
+    color: #f9f9f9;
     font-weight: 600;
   }
 
@@ -54,9 +54,9 @@ function Header() {
       <nav>
         <Ul>
           <LiLink>
-            <Link to="/">INICIO</Link>
-            <Link to="/docs">DOCS</Link>
-            <Link to="/acerca-de">ACERCA DE</Link>
+            {/* <Link to="/">INICIO</Link> */}
+            <Link to="/acerca-de">Acerca De</Link>
+            <a href="https://github.com/Franqsanz/fruits-api/">GitHub</a>
           </LiLink>
         </Ul>
       </nav>
