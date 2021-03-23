@@ -2,11 +2,12 @@ import { ApolloClient, ApolloProvider, from, HttpLink, InMemoryCache } from "@ap
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { About, Footer, Header, Home } from "./components/index";
+import { About, Footer, Home } from "./components/index";
 import { Global } from "./styles/index";
 
 const link = from([
-  new HttpLink({ uri: 'https://fruits-api.netlify.app/graphql'})
+  // new HttpLink({ uri: 'https://fruits-api.netlify.app/graphql'})
+  new HttpLink({ uri: 'http://localhost:9000/graphql'})
 ]);
 
 const client = new ApolloClient({
@@ -19,7 +20,7 @@ function App() {
     <>
       <Global />
       <Router>
-        <Header />
+        {/* <Header /> */}
         <ApolloProvider client={client}>
           <Route exact path="/" component={Home} />
           <Route exact path="/acerca-de" component={About} />

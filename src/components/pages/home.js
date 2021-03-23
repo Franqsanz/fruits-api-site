@@ -4,8 +4,9 @@ import Query from "../query";
 
 const SectLogo = styled.section`
   background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
-  height: 80vh;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-style: italic;
@@ -19,14 +20,15 @@ const SectLogo = styled.section`
 `;
 
 const H1 = styled.h1`
-  font-size: 6rem;
+  font-size: 7rem;
   color: #191919;
-  transform: skewY(-2deg);
+  margin: 5rem 0 2rem 0;
+  transform: skewY(-3.5deg);
   text-align: center;
 
   @media only screen and (max-width: 425px) {
     & {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
 `;
@@ -138,9 +140,64 @@ export const Load = styled.div`
 
 export const Li = styled.li`
   padding: 1rem;
-  /* font-size: 1.125rem; */
   text-align: center;
+  list-style: none;
 `;
+
+const PDescription = styled.p`
+  max-width: 450px;
+  line-height: 1.77;
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 1rem;
+  word-spacing: 5px;
+`;
+
+const Links = styled.div`
+  margin-top: 2rem;
+  font-size: 1.5rem;
+
+  @media only screen and (max-width: 425px) {
+    & {
+      font-size: 1.125rem;
+    }
+  }
+`;
+
+const Ul = styled.ul`
+  display: flex;
+  padding-inline-start: 0;
+
+
+  @media only screen and (max-width: 425px) {
+    & {
+      flex-direction: column;
+    }
+  }
+`;
+
+const LiLinks = styled.li`
+  margin: 5px;
+  text-align: center;
+  list-style: none;
+`;
+
+const ALink = styled.a`
+  display: block;
+  width: 150px;
+  color: #ffffff;
+  padding: 0.4rem;
+  border-radius: 5px;
+  text-decoration: none;
+  background: #000000;
+  box-shadow: 0 0 5px #000000;
+
+  &:hover {
+    background: linear-gradient(-55deg, #fa2a1b, #ffc700, 85%, #03d403);
+    color: #000000;
+  }
+`;
+
 
 function Home() {
   const number = 10;
@@ -149,6 +206,16 @@ function Home() {
     <>
       <SectLogo>
         <H1>FRUITS API</H1>
+        <PDescription>
+          API publica con datos de arboles frutales, los datos se obtubieron de wikipedia.
+          Los datos pueden variar ya que cada arbol tiene muchas variedades.
+        </PDescription>
+        <Links>
+          <Ul>
+            <LiLinks><ALink href="https://fruits-api.netlify.app/graphql">Fruits API</ALink></LiLinks>
+            <LiLinks><ALink href="https://github.com/Franqsanz/fruits-api/">GitHub</ALink></LiLinks>
+          </Ul>
+        </Links>
       </SectLogo>
       {/* <Section>
         <H1>¿Qué es esto?</H1>
