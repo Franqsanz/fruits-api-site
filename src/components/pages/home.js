@@ -22,7 +22,7 @@ const SectLogo = styled.section`
 const H1 = styled.h1`
   font-size: 7rem;
   color: #191919;
-  margin: 5rem 0 2rem 0;
+  margin: 8rem 0 5rem 0;
   transform: skewY(-3.5deg);
   text-align: center;
 
@@ -145,7 +145,7 @@ export const Li = styled.li`
 `;
 
 const PDescription = styled.p`
-  max-width: 450px;
+  max-width: 480px;
   line-height: 1.77;
   text-align: center;
   font-size: 1.125rem;
@@ -184,7 +184,7 @@ const LiLinks = styled.li`
 
 const ALink = styled.a`
   display: block;
-  width: 150px;
+  width: 180px;
   color: #ffffff;
   padding: 0.4rem;
   border-radius: 5px;
@@ -207,13 +207,13 @@ function Home() {
       <SectLogo>
         <H1>FRUITS API</H1>
         <PDescription>
-          API publica con datos de arboles frutales, los datos se obtubieron de wikipedia.
-          Los datos pueden variar ya que cada arbol tiene muchas variedades.
+          API pública con datos de árboles frutales, los datos se obtuvieron de wikipedia.
+          La información pueden variar ya que cada especie tienen muchas variedades.
         </PDescription>
         <Links>
           <Ul>
             <LiLinks><ALink href="https://fruits-api.netlify.app/graphql">Fruits API</ALink></LiLinks>
-            <LiLinks><ALink href="https://github.com/Franqsanz/fruits-api/">GitHub</ALink></LiLinks>
+            <LiLinks><ALink href="https://github.com/Franqsanz/fruits-api/">Documentación</ALink></LiLinks>
           </Ul>
         </Links>
       </SectLogo>
