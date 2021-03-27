@@ -22,7 +22,7 @@ const SectLogo = styled.section`
 const H1 = styled.h1`
   font-size: 7rem;
   color: #191919;
-  margin: 8rem 0 5rem 0;
+  margin: 8rem 0 3rem 0;
   transform: skewY(-3.5deg);
   text-align: center;
 
@@ -139,18 +139,18 @@ export const Load = styled.div`
 `;
 
 export const Li = styled.li`
-  padding: 1rem;
+  padding: 0.4rem;
   text-align: center;
   list-style: none;
 `;
 
 const PDescription = styled.p`
   max-width: 480px;
-  line-height: 1.77;
+  line-height: 1.66;
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding: 1rem;
-  word-spacing: 5px;
+  word-spacing: 3px;
 `;
 
 const Links = styled.div`
@@ -167,7 +167,6 @@ const Links = styled.div`
 const Ul = styled.ul`
   display: flex;
   padding-inline-start: 0;
-
 
   @media only screen and (max-width: 425px) {
     & {
@@ -198,9 +197,11 @@ const ALink = styled.a`
   }
 `;
 
+export const UlCard = styled.ul`
+  padding-inline-start: 0;
+`;
 
 function Home() {
-  const number = 10;
 
   return (
     <>

@@ -1,8 +1,8 @@
 import { ApolloClient, ApolloProvider, from, HttpLink, InMemoryCache } from "@apollo/client";
 import React from "react";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
 import { render } from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { About, Footer, Home } from "./components/index";
+import { Footer, Home } from "./components/index";
 import { Global } from "./styles/index";
 
 const link = from([
@@ -19,13 +19,13 @@ function App() {
   return (
     <>
       <Global />
-      <Router>
-        {/* <Header /> */}
-        <ApolloProvider client={client}>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/acerca-de" component={About} />
-        </ApolloProvider>
-      </Router>
+      <ApolloProvider client={client}>
+        <Home />
+        {/* <Route exact path="/" component={Home} /> */}
+        {/* <Route exact path="/acerca-de" component={About} /> */}
+      </ApolloProvider>
+      {/* <Router>
+      </Router> */}
       <Footer />
     </>
   )
