@@ -21,10 +21,10 @@ function App() {
       <Global />
       <ApolloProvider client={client}>
         <Home />
-        {/* <Route exact path="/" component={Home} /> */}
-        {/* <Route exact path="/acerca-de" component={About} /> */}
       </ApolloProvider>
       {/* <Router>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/acerca-de" component={About} />
       </Router> */}
       <Footer />
     </>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Query from "../query";
 
 const SectLogo = styled.section`
-  background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,18 +10,13 @@ const SectLogo = styled.section`
   align-items: center;
   font-style: italic;
   font-weight: 600;
-
-  /* @media only screen and (max-width: 425px) {
-    & {
-      padding: 4rem;
-    }
-  } */
+  background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
 `;
 
 const H1 = styled.h1`
   font-size: 7rem;
   color: #191919;
-  margin: 8rem 0 3rem 0;
+  margin: 7rem 0 3rem 0;
   transform: skewY(-3.5deg);
   text-align: center;
 
@@ -76,7 +70,7 @@ export const ContentCards = styled.section`
 
   @media only screen and (max-width: 425px) {
     & {
-      padding: 1.5em 0 0 0;
+      padding: 1.5em 0 1.5em 0;
     }
   }
 `;
@@ -154,7 +148,7 @@ const PDescription = styled.p`
 `;
 
 const Links = styled.div`
-  margin-top: 2rem;
+  margin: 0 0 2rem 0;
   font-size: 1.5rem;
 
   @media only screen and (max-width: 425px) {
@@ -207,16 +201,16 @@ function Home() {
     <>
       <SectLogo>
         <H1>FRUITS API</H1>
-        <PDescription>
-          API pública con datos de árboles frutales, los datos se obtuvieron de wikipedia.
-          La información pueden variar ya que cada especie tienen muchas variedades.
-        </PDescription>
         <Links>
           <Ul>
             <LiLinks><ALink href="https://fruits-api.netlify.app/graphql">Fruits API</ALink></LiLinks>
             <LiLinks><ALink href="https://github.com/Franqsanz/fruits-api/">Documentación</ALink></LiLinks>
           </Ul>
         </Links>
+        <PDescription>
+          API pública con datos de árboles frutales, los datos se obtuvieron de wikipedia.
+          La información pueden variar ya que cada especie tienen muchas variedades.
+        </PDescription>
       </SectLogo>
       {/* <Section>
         <H1>¿Qué es esto?</H1>
