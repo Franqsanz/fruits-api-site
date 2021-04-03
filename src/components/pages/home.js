@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Query from "../query";
+// import { FruitOri, Fruits } from "../query";
+import { Fruits } from "../query";
+import About from "./about";
 
 const SectLogo = styled.section`
+  --rotate: 55deg;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,7 +13,14 @@ const SectLogo = styled.section`
   align-items: center;
   font-style: italic;
   font-weight: 600;
-  background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
+  background: linear-gradient(var(--rotate), #fa2a1b, #ffc700, 85%, #03d403);
+  animation: 6s gradient infinite normal linear;
+
+  @keyframes gradient {
+    100% {
+      --rotate: -55deg;
+    }
+  }
 `;
 
 const H1 = styled.h1`
@@ -22,7 +32,7 @@ const H1 = styled.h1`
 
   @media only screen and (max-width: 425px) {
     & {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
     }
   }
 `;
@@ -145,10 +155,16 @@ const PDescription = styled.p`
   font-size: 1rem;
   padding: 1rem;
   word-spacing: 3px;
+
+  @media only screen and (max-width: 425px) {
+    & {
+      max-width: 300px;
+    }
+  }
 `;
 
 const Links = styled.div`
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   font-size: 1.5rem;
 
   @media only screen and (max-width: 425px) {
@@ -184,6 +200,7 @@ const ALink = styled.a`
   text-decoration: none;
   background: #000000;
   box-shadow: 0 0 5px #000000;
+  margin: 5px;
 
   &:hover {
     background: linear-gradient(-55deg, #fa2a1b, #ffc700, 85%, #03d403);
@@ -212,6 +229,7 @@ function Home() {
           La información pueden variar ya que cada especie tienen muchas variedades.
         </PDescription>
       </SectLogo>
+      <About />
       {/* <Section>
         <H1>¿Qué es esto?</H1>
         <P>
@@ -238,7 +256,9 @@ function Home() {
           <div className="number">{number}</div>
         </div>
       </ContentTags> */}
-      <Query />
+      {/* <Query /> */}
+      <Fruits />
+      {/* <FruitOri /> */}
     </>
   );
 }

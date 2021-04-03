@@ -23,7 +23,19 @@ const ALL_FRUITS = gql`
   }
 `;
 
-function fruits() {
+const FILTER_FRUIT_ORI = gql`
+  query filterFruitOri {
+    filterFruitsOri (origin: "Asia") {
+      id
+      scientific_name
+      tree_name
+      fruit_name
+      family
+    }
+  }
+`;
+
+function Fruits() {
   const { error, loading, data } = useQuery(ALL_FRUITS);
   const [fruits, setFruits] = useState([]);
 
@@ -39,7 +51,7 @@ function fruits() {
       {
         fruits.map((fruit) => {
           return (
-            <Cards key={fruit.scientific_name}>
+            <Cards key={fruit.id}>
               <div>
                 <h1>{fruit.fruit_name}</h1>
                 <UlCard>
@@ -64,7 +76,7 @@ function fruits() {
                     {fruit.producing_countries.map(p => {
                         return (
                           <>
-                            <Li>{p.country}</Li>
+                            <Li key={p.country}>{p.country}</Li>
                           </>
                         )
                       })}
@@ -81,4 +93,34 @@ function fruits() {
   )
 }
 
-export default fruits;
+function FruitOri() {
+  const { error, loading, data } = useQuery(FILTER_FRUIT_ORI);
+  const [fruits, setFruits] = useState([]);
+
+  useEffect(() => {
+    console.log(data)
+    // if (data) setFruits(data);
+  }, [data])
+
+  return (
+    <ContentCards>
+      {/* {fruits.map((ori) => console.log(ori))} */}
+      {/* {
+        fruitOri.map((fruit) => {
+          return (
+            <Cards key={fruit.id}>
+              <div>
+                <li>{fruit.scientific_name}</li>
+                <li>{fruit.tree_name}</li>
+                <li>{fruit.fruit_name}</li>
+                <li>{fruit.family}</li>
+              </div>
+            </Cards>
+          )
+        })
+      } */}
+    </ContentCards>
+  )
+}
+
+export { Fruits, FruitOri };
