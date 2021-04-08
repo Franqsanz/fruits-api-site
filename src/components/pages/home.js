@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import About from "../about";
 // import { FruitOri, Fruits } from "../query";
 import { Fruits } from "../query";
-import About from "./about";
 
 const SectLogo = styled.section`
-  --rotate: 55deg;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,14 +12,7 @@ const SectLogo = styled.section`
   align-items: center;
   font-style: italic;
   font-weight: 600;
-  background: linear-gradient(var(--rotate), #fa2a1b, #ffc700, 85%, #03d403);
-  animation: 6s gradient infinite normal linear;
-
-  @keyframes gradient {
-    100% {
-      --rotate: -55deg;
-    }
-  }
+  background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
 `;
 
 const H1 = styled.h1`
