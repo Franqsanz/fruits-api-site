@@ -36,7 +36,8 @@ function About() {
       <H2>¿Qué es esto?</H2>
       <P>
         Esta es una API GraphQL, que esta construida con Apollo Server Lambda.
-        Este sitio esta desarrollado con ReactJS y Styled Components. Ambos proyectos estan desplegados en Netlify.
+        Este sitio esta desarrollado con ReactJS y Styled Components. Ambos
+        proyectos estan desplegados en Netlify.
       </P>
     </>
   );

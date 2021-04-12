@@ -17,7 +17,7 @@ const Info = styled.p`
     font-weight: 600;
     border-bottom: 2px solid;
   }
-`
+`;
 
 function Footer() {
   return (

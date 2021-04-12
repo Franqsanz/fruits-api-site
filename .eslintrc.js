@@ -18,11 +18,8 @@ module.exports = {
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
+        extensions: [".js", ".jsx"],
+      },
     ],
     "react/react-in-jsx-scope": 0,
     "import/no-unresolved": 0,
@@ -33,6 +30,6 @@ module.exports = {
     "no-console": 0,
     "no-shadow": 0,
     "react/jsx-key": 0,
-    "consistent-return": 0
+    "consistent-return": 0,
   },
 };

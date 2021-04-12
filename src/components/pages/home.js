@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import About from "../about";
-// import { FruitOri, Fruits } from "../query";
-import { Fruits } from "../query";
+import { Fruits } from "../cards";
 
 const SectLogo = styled.section`
   height: 100vh;
@@ -61,83 +60,6 @@ const ContentTags = styled.section`
       color: var(--white);
     }
   }
-`;
-
-export const ContentCards = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1.5em;
-  /* background: var(--background-body); */
-
-  @media only screen and (max-width: 425px) {
-    & {
-      padding: 1.5em 0 1.5em 0;
-    }
-  }
-`;
-
-export const Cards = styled.div`
-  width: 600px;
-  font-size: 1.1rem;
-  margin: 7px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #000000;
-  overflow: hidden;
-  background: whitesmoke;
-
-  & {
-    font-size: 1.2rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-    text-align: center;
-    padding: 0.5em 0 0.5em 0;
-    font-style: italic;
-    color: #191919;
-    /* background: gold; */
-    background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 0.5em;
-    /* font-style: italic; */
-    /* background: #03d403; */
-    color: #191919;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.65;
-    padding: 1.5rem;
-  }
-
-  @media only screen and (max-width: 425px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-  }
-`;
-
-export const Load = styled.div`
-  padding: 2em;
-  font-size: 2rem;
-  text-align: center;
-  background: white;
-  font-weight: 700;
-`;
-
-export const Li = styled.li`
-  padding: 0.4rem;
-  text-align: center;
-  list-style: none;
 `;
 
 const PDescription = styled.p`
@@ -200,25 +122,29 @@ const ALink = styled.a`
   }
 `;
 
-export const UlCard = styled.ul`
-  padding-inline-start: 0;
-`;
-
 function Home() {
-
   return (
     <>
       <SectLogo>
         <H1>FRUITS API</H1>
         <Links>
           <Ul>
-            <LiLinks><ALink href="https://fruits-api.netlify.app/graphql">Fruits API</ALink></LiLinks>
-            <LiLinks><ALink href="https://github.com/Franqsanz/fruits-api/">Documentación</ALink></LiLinks>
+            <LiLinks>
+              <ALink href="https://fruits-api.netlify.app/graphql">
+                Fruits API
+              </ALink>
+            </LiLinks>
+            <LiLinks>
+              <ALink href="https://github.com/Franqsanz/fruits-api/">
+                Documentación
+              </ALink>
+            </LiLinks>
           </Ul>
         </Links>
         <PDescription>
-          API pública con datos de árboles frutales, los datos se obtuvieron de wikipedia.
-          La información pueden variar ya que cada especie tienen muchas variedades.
+          API pública con datos de árboles frutales, los datos se obtuvieron de
+          wikipedia. La información pueden variar ya que cada especie tienen
+          muchas variedades.
         </PDescription>
       </SectLogo>
       <About />

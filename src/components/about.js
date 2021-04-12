@@ -25,7 +25,7 @@ const P = styled.p`
   max-width: 500px;
   line-height: 1.77;
   margin: auto;
-  /* text-align: left; */
+  text-align: center;
   color: #f7f7f7;
   padding: 0.7rem;
 `;
@@ -36,7 +36,8 @@ function About() {
       <H2>¿Qué es esto?</H2>
       <P>
         Esta es una API GraphQL, que está construida con Apollo Server Lambda.
-        Este sitio está desarrollado con ReactJS y Styled Components. Ambos proyectos están desplegados en Netlify.
+        Este sitio está desarrollado con ReactJS y Styled Components. Ambos
+        proyectos están desplegados en Netlify.
       </P>
     </>
   );

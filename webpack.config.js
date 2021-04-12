@@ -16,7 +16,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/, // Ignora la carpeta de node_modules
         use: {
-          loader: "babel-loader" // Utiliza la configuracion de Babel
+          loader: "babel-loader", // Utiliza la configuracion de Babel
         },
       },
       {
@@ -26,7 +26,7 @@ module.exports = {
             loader: "html-loader",
           },
         ],
-      }
+      },
     ],
   },
   plugins: [
