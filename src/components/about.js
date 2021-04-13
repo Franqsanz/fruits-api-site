@@ -27,7 +27,7 @@ const P = styled.p`
   margin: auto;
   text-align: center;
   color: #f7f7f7;
-  padding: 0.7rem;
+  padding: 0.9rem;
 `;
 
 function About() {

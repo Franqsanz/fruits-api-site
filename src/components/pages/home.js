@@ -147,6 +147,7 @@ function Home() {
           muchas variedades.
         </PDescription>
       </SectLogo>
+      <Fruits />
       <About />
       {/* <Section>
         <H1>¿Qué es esto?</H1>
@@ -174,8 +175,6 @@ function Home() {
           <div className="number">{number}</div>
         </div>
       </ContentTags> */}
-      {/* <Query /> */}
-      <Fruits />
       {/* <FruitOri /> */}
     </>
   );
