@@ -22,7 +22,6 @@ const Info = styled.p`
 function Footer() {
   return (
     <InfoFooter>
-      <Info>Este sitio está construido con React y Styled Components</Info>
       <Info>
         Hecho con ❤ por
         {' '}

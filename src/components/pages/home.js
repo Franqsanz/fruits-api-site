@@ -1,7 +1,13 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import About from "../about";
 import { Fruits } from "../cards";
+
+const position = keyframes`
+  0% { background-position: 100% 0; }
+  50% { background-position: 0 500%; }
+  100% { background-position: 100% 0; }
+`;
 
 const SectLogo = styled.section`
   height: 100vh;
@@ -12,6 +18,8 @@ const SectLogo = styled.section`
   font-style: italic;
   font-weight: 600;
   background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
+  background-size: 200%;
+  animation: ${position} 7s infinite cubic-bezier(.45,.05,.55,.95) running;
 `;
 
 const H1 = styled.h1`
@@ -28,11 +36,6 @@ const H1 = styled.h1`
   }
 `;
 
-// export const H2 = styled.h2`
-//   text-align: center;
-//   /* background: var(--background-body); */
-// `;
-
 const ContentTags = styled.section`
   display: flex;
   /* justify-content: center; */
@@ -40,7 +43,7 @@ const ContentTags = styled.section`
   align-items: center;
   color: white;
   padding: 0.8rem;
-  background: var(--background-body);
+  /* background: var(--background-body); */
 
   .tags {
     display: flex;
@@ -123,6 +126,8 @@ const ALink = styled.a`
 `;
 
 function Home() {
+  const number = 10;
+
   return (
     <>
       <SectLogo>
@@ -147,16 +152,7 @@ function Home() {
           muchas variedades.
         </PDescription>
       </SectLogo>
-      <Fruits />
-      <About />
-      {/* <Section>
-        <H1>¿Qué es esto?</H1>
-        <P>
-          Fruits API, es una API GraphQL, que contiene muchos datos de plantas frutales.
-        </P>
-        <P>Si deseas saber más visita la pagina Acerca de.</P>
-      </Section> */}
-      {/* <H2>TAGS</H2> */}
+      {/* <h2>TAGS</h2> */}
       {/* <ContentTags>
         <div className="tags">
           ASIA
@@ -175,7 +171,8 @@ function Home() {
           <div className="number">{number}</div>
         </div>
       </ContentTags> */}
-      {/* <FruitOri /> */}
+      <Fruits />
+      <About />
     </>
   );
 }

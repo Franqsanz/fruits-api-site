@@ -27,7 +27,6 @@ const ContentCards = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   padding: 1.5em;
-  /* background: var(--background-body); */
 
   @media only screen and (max-width: 425px) {
     & {
