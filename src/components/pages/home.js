@@ -19,13 +19,13 @@ const SectLogo = styled.section`
   font-weight: 600;
   background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
   background-size: 200%;
-  animation: ${position} 7s infinite cubic-bezier(.45,.05,.55,.95) running;
+  animation: ${position} 6s infinite cubic-bezier(.45,.05,.55,.95) running;
 `;
 
 const H1 = styled.h1`
   font-size: 7rem;
   color: #191919;
-  margin: 7rem 0 3rem 0;
+  margin: 7rem 0 2rem 0;
   transform: skewY(-3.5deg);
   text-align: center;
 
@@ -66,22 +66,16 @@ const ContentTags = styled.section`
 `;
 
 const PDescription = styled.p`
-  max-width: 480px;
+  max-width: max(min(300px), 480px);
   line-height: 1.66;
   text-align: center;
   font-size: 1rem;
   padding: 1rem;
   word-spacing: 3px;
-
-  @media only screen and (max-width: 425px) {
-    & {
-      max-width: 300px;
-    }
-  }
 `;
 
 const Links = styled.div`
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 0 0;
   font-size: 1.5rem;
 
   @media only screen and (max-width: 425px) {
@@ -112,12 +106,12 @@ const ALink = styled.a`
   display: block;
   width: 180px;
   color: #ffffff;
-  padding: 0.4rem;
+  padding: 0.6rem;
   border-radius: 5px;
   text-decoration: none;
   background: #000000;
   box-shadow: 0 0 5px #000000;
-  margin: 5px;
+  margin: 4px;
 
   &:hover {
     background: linear-gradient(-55deg, #fa2a1b, #ffc700, 85%, #03d403);
@@ -126,17 +120,21 @@ const ALink = styled.a`
 `;
 
 function Home() {
-  const number = 10;
+  // const number = 10;
 
   return (
     <>
       <SectLogo>
         <H1>FRUITS API</H1>
+        <PDescription>
+          API pública con datos de árboles frutales, los datos se obtuvieron de
+          wikipedia. La información puede variar ya que cada especie tiene muchas variedades.
+        </PDescription>
         <Links>
           <Ul>
             <LiLinks>
               <ALink href="https://fruits-api.netlify.app/graphql">
-                Fruits API
+                Playground
               </ALink>
             </LiLinks>
             <LiLinks>
@@ -146,11 +144,6 @@ function Home() {
             </LiLinks>
           </Ul>
         </Links>
-        <PDescription>
-          API pública con datos de árboles frutales, los datos se obtuvieron de
-          wikipedia. La información pueden variar ya que cada especie tienen
-          muchas variedades.
-        </PDescription>
       </SectLogo>
       {/* <h2>TAGS</h2> */}
       {/* <ContentTags>

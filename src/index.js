@@ -1,7 +1,7 @@
 import { ApolloProvider } from "@apollo/client";
 import React from "react";
-// import { BrowserRouter as Router, Route } from "react-router-dom";
 import { render } from "react-dom";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Footer, Home } from "./components/index";
 import { client } from "./components/provider";
 import { Global } from "./styles/index";
@@ -15,7 +15,7 @@ function App() {
       </ApolloProvider>
       {/* <Router>
         <Route exact path="/" component={Home} />
-        <Route exact path="/acerca-de" component={About} />
+        <Route path="*" component={Found} />
       </Router> */}
       <Footer />
     </>

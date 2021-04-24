@@ -40,9 +40,10 @@ const Cards = styled.div`
   font-size: 1.1rem;
   margin: 7px;
   border-radius: 5px;
-  box-shadow: 0 0 5px #000000;
+  box-shadow: 0 0 10px #000000;
   overflow: hidden;
-  background: whitesmoke;
+  background: #101010;
+  color: #f1f1f1;
 
   & {
     font-size: 1.2rem;
@@ -54,7 +55,6 @@ const Cards = styled.div`
     padding: 0.5em 0 0.5em 0;
     font-style: italic;
     color: #191919;
-    /* background: gold; */
     background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
   }
 
@@ -62,9 +62,9 @@ const Cards = styled.div`
     font-size: 1.5rem;
     text-align: center;
     padding: 0.5em;
-    /* font-style: italic; */
-    /* background: #03d403; */
-    color: #191919;
+    font-style: italic;
+    color: #ffc700;
+    border-top: 3px solid #2a2a2a;
   }
 
   li {
@@ -74,7 +74,7 @@ const Cards = styled.div`
   p {
     font-size: 1rem;
     line-height: 1.65;
-    padding: 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
   }
 
   @media only screen and (max-width: 425px) {
@@ -93,7 +93,7 @@ const Load = styled.div`
 `;
 
 const Li = styled.li`
-  padding: 0.4rem;
+  padding: 0 0 0.7rem 0;
   text-align: center;
   list-style: none;
 `;

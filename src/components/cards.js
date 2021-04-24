@@ -30,6 +30,14 @@ function Fruits() {
                 <Li>{fruit.origin}</Li>
                 <h2>Familia</h2>
                 <Li>{fruit.family}</Li>
+                <h2>Floración</h2>
+                <Li>{fruit.bloom || "Desconocido"}</Li>
+                <h2>Maduración</h2>
+                <Li>{fruit.maturation_fruit || "Desconocido"}</Li>
+                <h2>Ciclo de vida</h2>
+                <Li>{fruit.life_cycle || "Desconocido"}</Li>
+                <h2>Zona climática</h2>
+                <Li>{fruit.climatic_zone}</Li>
                 <h2>Paises de Producción</h2>
                 <UlCard>
                   {fruit.producing_countries.map((p) => {
@@ -40,10 +48,10 @@ function Fruits() {
                     );
                   })}
                 </UlCard>
+                <h2>Descripción:</h2>
+                <p>{fruit.description}</p>
               </UlCard>
             </div>
-            <h2>Descripción:</h2>
-            <p>{fruit.description}</p>
           </Cards>
         );
       })}

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const H2 = styled.h2`
   text-align: center;
   color: #f7f7f7;
-  padding: 0.5em 0 0.5em 0;
+  padding: 0.5em 0 0.2em 0;
   font-size: 3rem;
   font-style: italic;
 
@@ -21,7 +21,7 @@ const P = styled.p`
   margin: auto;
   text-align: center;
   color: #f7f7f7;
-  padding: 1rem;
+  padding: 0 2rem 2rem 2rem;
 `;
 
 function About() {

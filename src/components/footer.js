@@ -9,7 +9,6 @@ const InfoFooter = styled.footer`
 
 const Info = styled.p`
   color: var(--black);
-  margin-top: 10px;
 
   a {
     text-decoration: none;
