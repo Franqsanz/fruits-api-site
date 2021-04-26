@@ -5,15 +5,8 @@ const H2 = styled.h2`
   text-align: center;
   color: #f7f7f7;
   padding: 0.5em 0 0.2em 0;
-  /* font-size: 3rem; */
   font-size: clamp(2.2rem, 5vw, 3rem);
   font-style: italic;
-
-  /* @media only screen and (max-width: 425px) {
-    & {
-      font-size: 2.2rem;
-    }
-  } */
 `;
 
 const P = styled.p`

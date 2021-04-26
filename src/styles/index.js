@@ -36,18 +36,13 @@ const ContentCards = styled.section`
 `;
 
 const Cards = styled.div`
-  width: 600px;
-  font-size: 1.1rem;
-  margin: 7px;
+  width: 500px;
+  margin: 3ch 3ch 0 3ch ;
   border-radius: 5px;
   box-shadow: 0 0 10px #000000;
   overflow: hidden;
   background: #101010;
   color: #f1f1f1;
-
-  & {
-    font-size: 1.2rem;
-  }
 
   h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);
@@ -55,7 +50,7 @@ const Cards = styled.div`
     padding: 0.5em 0 0.5em 0;
     font-style: italic;
     color: #191919;
-    background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
+    background: linear-gradient(55deg, #ffc700, 60%, #03d403);
   }
 
   h2 {
@@ -76,12 +71,6 @@ const Cards = styled.div`
     line-height: 1.65;
     padding: 0 1.5rem 1.5rem 1.5rem;
   }
-
-  /* @media only screen and (max-width: 425px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-  } */
 `;
 
 const Load = styled.div`

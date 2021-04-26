@@ -43,7 +43,7 @@ function Fruits() {
                   {fruit.producing_countries.map((p) => {
                     return (
                       <>
-                        <Li key={p.country}>{p.country}</Li>
+                        <Li>{p.country}</Li>
                       </>
                     );
                   })}
