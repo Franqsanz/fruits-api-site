@@ -50,7 +50,7 @@ const Cards = styled.div`
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     text-align: center;
     padding: 0.5em 0 0.5em 0;
     font-style: italic;
@@ -64,7 +64,7 @@ const Cards = styled.div`
     padding: 0.5em;
     font-style: italic;
     color: #ffc700;
-    border-top: 3px solid #2a2a2a;
+    border-top: 1px solid #2a2a2a;
   }
 
   li {
@@ -77,11 +77,11 @@ const Cards = styled.div`
     padding: 0 1.5rem 1.5rem 1.5rem;
   }
 
-  @media only screen and (max-width: 425px) {
+  /* @media only screen and (max-width: 425px) {
     h1 {
       font-size: 2.5rem;
     }
-  }
+  } */
 `;
 
 const Load = styled.div`

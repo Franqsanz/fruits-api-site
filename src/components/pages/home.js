@@ -23,17 +23,18 @@ const SectLogo = styled.section`
 `;
 
 const H1 = styled.h1`
-  font-size: 7rem;
+  /* font-size: 7rem; */
+  font-size: clamp(4.5rem, 10vw, 7rem);
   color: #191919;
   margin: 7rem 0 2rem 0;
   transform: skewY(-3.5deg);
   text-align: center;
 
-  @media only screen and (max-width: 425px) {
+  /* @media only screen and (max-width: 425px) {
     & {
       font-size: 4.5rem;
     }
-  }
+  } */
 `;
 
 const ContentTags = styled.section`
@@ -66,7 +67,8 @@ const ContentTags = styled.section`
 `;
 
 const PDescription = styled.p`
-  max-width: max(min(300px), 480px);
+  /* max-width: max(min(300px), 480px); */
+  max-width: clamp(45ch, 50%, 60ch);
   line-height: 1.66;
   text-align: center;
   font-size: 1rem;
@@ -76,13 +78,13 @@ const PDescription = styled.p`
 
 const Links = styled.div`
   margin: 1rem 0 0 0;
-  font-size: 1.5rem;
+  font-size: clamp(1.125rem, 5vw, 1.5rem);
 
-  @media only screen and (max-width: 425px) {
+  /* @media only screen and (max-width: 425px) {
     & {
       font-size: 1.125rem;
     }
-  }
+  } */
 `;
 
 const Ul = styled.ul`
