@@ -65,7 +65,7 @@ const PDescription = styled.p`
   line-height: 1.66;
   text-align: center;
   font-size: 1rem;
-  padding: 1rem 2rem 0 2rem;
+  padding: 0rem 3rem 0 2rem;
 `;
 
 const Links = styled.div`
@@ -94,7 +94,7 @@ const ALink = styled.a`
   display: block;
   width: 180px;
   color: #ffffff;
-  padding: 0.7rem;
+  padding: 0.8rem;
   border-radius: 5px;
   text-decoration: none;
   background: #000000;

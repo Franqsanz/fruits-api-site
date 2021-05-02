@@ -11,7 +11,7 @@ const H2 = styled.h2`
 
 const P = styled.p`
   max-width: 500px;
-  line-height: 1.77;
+  line-height: 1.66;
   margin: auto;
   text-align: center;
   color: #f7f7f7;
