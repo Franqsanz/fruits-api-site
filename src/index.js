@@ -1,5 +1,5 @@
 import { ApolloProvider } from "@apollo/client";
-import React from "react";
+import React, { StrictMode } from "react";
 import { render } from "react-dom";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Footer, Home } from "./components/index";
@@ -9,15 +9,17 @@ import { Global } from "./styles/index";
 function App() {
   return (
     <>
-      <Global />
-      <ApolloProvider client={client}>
-        <Home />
-      </ApolloProvider>
-      {/* <Router>
+      <StrictMode>
+        <Global />
+        <ApolloProvider client={client}>
+          <Home />
+        </ApolloProvider>
+        {/* <Router>
         <Route exact path="/" component={Home} />
         <Route path="*" component={Found} />
-      </Router> */}
-      <Footer />
+        </Router> */}
+        <Footer />
+      </StrictMode>
     </>
   );
 }

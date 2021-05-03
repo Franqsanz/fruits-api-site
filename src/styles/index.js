@@ -54,7 +54,7 @@ const Cards = styled.div`
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     padding: 0.5em;
     font-style: italic;

@@ -70,7 +70,6 @@ function FruitOri() {
 
   return (
     <ContentCards>
-      {/* {fruits.map((ori) => console.log(ori))} */}
       {/* {
         fruitOri.map((fruit) => {
           return (

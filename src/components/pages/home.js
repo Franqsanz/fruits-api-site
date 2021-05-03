@@ -154,6 +154,7 @@ function Home() {
       </ContentTags> */}
       <Fruits />
       <About />
+      {/* <FruitOri /> */}
     </>
   );
 }
