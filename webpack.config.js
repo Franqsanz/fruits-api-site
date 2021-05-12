@@ -1,10 +1,11 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+// const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js", // Elegimos nuestro punto de entrada
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"),
     filename: "bundle.js",
   }, // Añadimos nuestro punto de salida
   resolve: {
@@ -27,12 +28,32 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: { name: "assets/[hash].[ext]" },
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      template: "./public/index.html",
       filename: "./index.html",
     }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, '../public'),
+    //       to: "public"
+    //     },
+    //   ],
+    //   options: {
+    //     concurrency: 100,
+    //   },
+    // }),
   ],
 };
