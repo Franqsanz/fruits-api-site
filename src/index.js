@@ -1,9 +1,9 @@
 import { ApolloProvider } from "@apollo/client";
 import React, { StrictMode } from "react";
 import { render } from "react-dom";
+import { client } from "./components/client";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Footer, Home } from "./components/index";
-import { client } from "./components/provider";
 import { Global } from "./styles/index";
 
 function App() {

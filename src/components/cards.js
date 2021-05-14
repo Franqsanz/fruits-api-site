@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import React, { useEffect, useState } from "react";
 import { Cards, ContentCards, Li, Load, UlCard } from "../styles/index";
-import { ALL_FRUITS, FILTER_FRUIT_ORI } from "./query";
+import { ALL_FRUITS } from "./query";
 
 function Fruits() {
   const { error, loading, data } = useQuery(ALL_FRUITS);
@@ -59,33 +59,4 @@ function Fruits() {
   );
 }
 
-function FruitOri() {
-  const { error, loading, data } = useQuery(FILTER_FRUIT_ORI);
-  const [fruits, setFruits] = useState([]);
-
-  useEffect(() => {
-    console.log(data);
-    // if (data) setFruits(data);
-  }, [data]);
-
-  return (
-    <ContentCards>
-      {/* {
-        fruitOri.map((fruit) => {
-          return (
-            <Cards key={fruit.id}>
-              <div>
-                <li>{fruit.scientific_name}</li>
-                <li>{fruit.tree_name}</li>
-                <li>{fruit.fruit_name}</li>
-                <li>{fruit.family}</li>
-              </div>
-            </Cards>
-          )
-        })
-      } */}
-    </ContentCards>
-  );
-}
-
-export { Fruits, FruitOri };
+export { Fruits };

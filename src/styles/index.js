@@ -37,7 +37,7 @@ const ContentCards = styled.section`
 
 const Cards = styled.div`
   width: 500px;
-  margin: 3ch 3ch 0 3ch ;
+  margin: 3ch 3ch 0 3ch;
   border-radius: 5px;
   box-shadow: 0 0 10px #000000;
   overflow: hidden;
@@ -51,6 +51,11 @@ const Cards = styled.div`
     font-style: italic;
     color: #191919;
     background: linear-gradient(55deg, #ffc700, 60%, #03d403);
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 5px;
   }
 
   h2 {

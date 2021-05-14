@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-// const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js", // Elegimos nuestro punto de entrada
@@ -43,17 +42,6 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./public/index.html",
       filename: "./index.html",
-    }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, '../public'),
-    //       to: "public"
-    //     },
-    //   ],
-    //   options: {
-    //     concurrency: 100,
-    //   },
-    // }),
+    })
   ],
 };

@@ -19,49 +19,50 @@ const SectLogo = styled.section`
   font-weight: 600;
   background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
   background-size: 200%;
-  animation: ${position} 6s infinite cubic-bezier(.45,.05,.55,.95) running;
+  animation: ${position} 6s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95)
+    running;
 `;
 
 const H1 = styled.h1`
   font-size: clamp(4.5rem, 10vw, 8rem);
   color: #191919;
-  margin: 4rem 0 1.5rem 0;
+  margin: 3rem 0 1.5rem 0;
   transform: skewY(-3.5deg);
   text-align: center;
 `;
 
-const ContentTags = styled.section`
-  display: flex;
-  /* justify-content: center; */
-  flex-wrap: wrap;
-  align-items: center;
-  color: white;
-  padding: 0.8rem;
-  /* background: var(--background-body); */
+// const ContentTags = styled.section`
+//   display: flex;
+//   /* justify-content: center; */
+//   flex-wrap: wrap;
+//   align-items: center;
+//   color: white;
+//   padding: 0.8rem;
+//   /* background: var(--background-body); */
 
-  .tags {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--black);
-    background: #ffc700;
-    padding: 0.23rem 0.3rem 0.23rem 0.3rem;
-    margin: 4px;
-    border-radius: 5px;
+//   .tags {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     color: var(--black);
+//     background: #ffc700;
+//     padding: 0.23rem 0.3rem 0.23rem 0.3rem;
+//     margin: 4px;
+//     border-radius: 5px;
 
-    .number {
-      background: black;
-      margin: 0 0 0 5px;
-      padding: 0.1rem 0.3rem 0.1rem 0.3rem;
-      border-radius: 5px;
-      color: var(--white);
-    }
-  }
-`;
+//     .number {
+//       background: black;
+//       margin: 0 0 0 5px;
+//       padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+//       border-radius: 5px;
+//       color: var(--white);
+//     }
+//   }
+// `;
 
 const PDescription = styled.p`
   max-width: 500px;
-/* max-width: clamp(45ch, 50%, 60ch); */
+  /* max-width: clamp(45ch, 50%, 60ch); */
   line-height: 1.66;
   text-align: center;
   font-size: 1rem;
@@ -108,15 +109,14 @@ const ALink = styled.a`
 `;
 
 function Home() {
-  // const number = 10;
-
   return (
     <>
       <SectLogo>
         <H1>FRUITS API</H1>
         <PDescription>
           API pública con datos de árboles frutales, los datos se obtuvieron de
-          wikipedia. La información puede variar ya que cada especie tiene muchas variedades.
+          wikipedia. La información puede variar ya que cada especie tiene
+          muchas variedades.
         </PDescription>
         <Links>
           <Ul>
@@ -154,7 +154,6 @@ function Home() {
       </ContentTags> */}
       <Fruits />
       <About />
-      {/* <FruitOri /> */}
     </>
   );
 }

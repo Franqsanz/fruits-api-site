@@ -21,16 +21,4 @@ const ALL_FRUITS = gql`
   }
 `;
 
-const FILTER_FRUIT_ORI = gql`
-  query filterFruitOri {
-    filterFruitsOri(origin: "Asia") {
-      id
-      scientific_name
-      tree_name
-      fruit_name
-      family
-    }
-  }
-`;
-
-export { ALL_FRUITS, FILTER_FRUIT_ORI };
+export { ALL_FRUITS };
