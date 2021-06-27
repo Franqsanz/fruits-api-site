@@ -3,7 +3,8 @@ import React, { StrictMode } from "react";
 import { render } from "react-dom";
 import { client } from "./components/client";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Footer, Home } from "./components/index";
+import Footer from "./components/footer";
+import Home from "./pages/home";
 import { Global } from "./styles/index";
 
 function App() {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import About from "../about";
-import { Fruits } from "../cards";
+import About from "../components/about";
+import { Fruits } from "../components/cards";
 
 const position = keyframes`
   0% { background-position: 100% 0; }
