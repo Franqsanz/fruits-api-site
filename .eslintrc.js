@@ -12,7 +12,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react", "prettier"],
+  plugins: ["react", "prettier", "import"],
   rules: {
     "no-alert": 0,
     "react/jsx-filename-extension": [

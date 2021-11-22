@@ -1,12 +1,10 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import About from "../components/about";
-import { Fruits } from "../components/cards";
+import styled, { keyframes } from 'styled-components';
+import About from '../components/about';
+import { Fruits } from '../components/cards';
 
 const position = keyframes`
-  0% { background-position: 100% 0; }
-  50% { background-position: 0 500%; }
-  100% { background-position: 100% 0; }
+  0% { filter: hue-rotate(0); }
+  100% { filter: hue-rotate(360deg); }
 `;
 
 const SectLogo = styled.section`
@@ -18,9 +16,8 @@ const SectLogo = styled.section`
   font-style: italic;
   font-weight: 600;
   background: linear-gradient(55deg, #fa2a1b, #ffc700, 85%, #03d403);
-  background-size: 200%;
-  animation: ${position} 6s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95)
-    running;
+  animation: ${position} 8s infinite running
+    cubic-bezier(0.68, -0.55, 0.27, 1.55); ;
 `;
 
 const H1 = styled.h1`
@@ -121,12 +118,12 @@ function Home() {
         <Links>
           <Ul>
             <LiLinks>
-              <ALink href="https://fruits-api.netlify.app/graphql">
+              <ALink href='https://fruits-api.netlify.app/graphql'>
                 Playground
               </ALink>
             </LiLinks>
             <LiLinks>
-              <ALink href="https://github.com/Franqsanz/fruits-api/">
+              <ALink href='https://github.com/Franqsanz/fruits-api/'>
                 Documentación
               </ALink>
             </LiLinks>
