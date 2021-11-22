@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from 'styled-components';
 import About from '../components/about';
 import { Fruits } from '../components/cards';
